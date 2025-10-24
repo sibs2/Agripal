@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AgriPal Design System - Agricultural Innovation & Sustainability
+All colors MUST be HSL. Based on natural green tones with orange accents.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 142 35% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 142 35% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 142 35% 15%;
+
+    /* AgriPal Primary - Deep Agricultural Green */
+    --primary: 140 100% 20%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 140 100% 30%;
+    --primary-dark: 140 100% 15%;
+
+    /* AgriPal Secondary - Natural Earth Tones */
+    --secondary: 142 25% 92%;
+    --secondary-foreground: 142 55% 25%;
+
+    --muted: 142 15% 94%;
+    --muted-foreground: 142 25% 45%;
+
+    /* AgriPal Accent - Vibrant Orange */
+    --accent: 25 100% 44%;
+    --accent-foreground: 0 0% 98%;
+    --accent-light: 25 100% 54%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 142 20% 85%;
+    --input: 142 20% 92%;
+    --ring: 142 55% 25%;
+
+    /* AgriPal Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 50%, hsl(var(--accent)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+
+    /* AgriPal Shadows */
+    --shadow-soft: 0 4px 20px -8px hsl(var(--primary) / 0.15);
+    --shadow-medium: 0 8px 30px -12px hsl(var(--primary) / 0.25);
+    --shadow-strong: 0 16px 40px -16px hsl(var(--primary) / 0.35);
+
+    /* AgriPal Animation */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 142 35% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 142 35% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 142 35% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 140 100% 25%;
+    --primary-foreground: 140 100% 8%;
+    --primary-light: 140 100% 35%;
+    --primary-dark: 140 100% 15%;
+
+    --secondary: 142 25% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 142 15% 12%;
+    --muted-foreground: 142 15% 65%;
+
+    --accent: 25 100% 49%;
+    --accent-foreground: 140 100% 8%;
+    --accent-light: 25 100% 59%;
+
+    --destructive: 0 75% 45%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 142 25% 18%;
+    --input: 142 25% 15%;
+    --ring: 142 45% 45%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
